@@ -7,7 +7,7 @@ margin-top: 60px;
   color: white;
   padding: 30px;
   border-radius: 5px;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Roboto';
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -54,6 +54,18 @@ margin-top: 60px;
   background-color: white;
   color: #5f5f5f;
   position: relative;
+}
+
+.Typist p {
+  display: inline-block;
+}
+
+.Typist span {
+  display: inline-block;
+}
+
+.Typist {
+  display: inline-block;
 }
 `
 
