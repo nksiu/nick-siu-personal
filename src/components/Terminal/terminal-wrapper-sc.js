@@ -20,10 +20,10 @@ margin-top: 60px;
   position: relative;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  float: right;
+  float: left;
   margin-top: 5px;
-  margin-right: 5px;
-  margin-left: -60px;
+  margin-left: 5px;
+  margin-right: -60px;
 }
 
 .terminal-button {

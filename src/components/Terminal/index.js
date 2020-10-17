@@ -37,9 +37,9 @@ const Terminal = ({header, command, body}) => {
               <div className={"terminal-header"}>
                 {header}
                 <div className={'terminal-buttons'}>
+                  <div className={'terminal-button terminal-button-close'} />
                     <div className={'terminal-button terminal-button-min'} />
                     <div className={'terminal-button terminal-button-max'} />
-                    <div className={'terminal-button terminal-button-close'} />
                 </div>
               </div>
               <div>
