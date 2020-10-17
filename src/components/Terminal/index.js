@@ -3,8 +3,6 @@ import Typist from 'react-typist';
 
 import TerminalWrapperSC from "./terminal-wrapper-sc"
 
-const SHELL_INPUT = <span>➜  ~ </span>
-
 const Terminal = ({header, command, body}) => {
   const [isDoneTyping, setDoneTyping] = useState(false);
   const SHELL_INPUT = <span>{">"}  ~ </span>;
@@ -28,7 +26,7 @@ const Terminal = ({header, command, body}) => {
         cursor = true;
       }
     }
-  }, 400)
+  }, 500)
 
   return (
     <div className="container">

@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 // Components
 import Header from "./components/Header";
-import Home from "./components/Home";
 import About from "./components/About"
 
 class App extends Component {
@@ -14,8 +13,7 @@ class App extends Component {
         <Router>
           <Header />
           <Switch>
-            <Route exact path="/about" render={() => <About />} />
-            <Route exact path="/" render={() => <Home />} />
+            <Route exact path="/" render={() => <About />} />
           </Switch>
         </Router>
     );
