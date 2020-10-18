@@ -7,26 +7,12 @@ const Terminal = ({header, command, body}) => {
   const [isDoneTyping, setDoneTyping] = useState(false);
   const SHELL_INPUT = <span>{">"}  ~ </span>;
   const BLINKER_NODE = (
-    <p>{SHELL_INPUT}<span id="cursor">|</span></p>
+    <p>{SHELL_INPUT}<span className={"cursor"}>|</span></p>
   )
 
   const showBodyContent = () => {
     if (!isDoneTyping) setDoneTyping(true);
   }
-  let cursor = false;
-
-  setInterval(() => {
-    const cursorExists = document.getElementById("cursor");
-    if (cursorExists) {
-      if (cursor) {
-        document.getElementById("cursor").style.opacity = 0;
-        cursor = false;
-      } else {
-        document.getElementById("cursor").style.opacity = 1;
-        cursor = true;
-      }
-    }
-  }, 500)
 
   return (
     <div className="container">

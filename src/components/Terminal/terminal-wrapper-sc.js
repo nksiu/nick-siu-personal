@@ -1,4 +1,11 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+const blink = keyframes`
+  from, to {
+    color: transparent;
+  }
+  60%{color: white;}
+`
 
 const TerminalWrapperSC = styled.div`
 margin-top: 60px;
@@ -60,12 +67,12 @@ margin-top: 60px;
   display: inline-block;
 }
 
-.Typist span {
+.Typist {
   display: inline-block;
 }
 
-.Typist {
-  display: inline-block;
+.cursor {
+  animation: ${blink} 1s linear infinite;
 }
 `
 
