@@ -15,9 +15,9 @@ const GlobalStyle = createGlobalStyle`
 
 const CONTACT_TEXT = (
   <div>
-    <p><b>Email: </b><a href="mailto:ncyk.siu@gmail.com" target="_blank">ncyk.siu@gmail.com</a></p>
-    <p><b>GitHub: </b><a href="https://github.com/nksiu" target="_blank">nksiu</a></p>
-    <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/nicholas-siu-409483182/" target="_blank">Nick Siu</a></p>
+    <p><b>Email: </b><a href="mailto:ncyk.siu@gmail.com" target="_blank" rel="noopener noreferrer">ncyk.siu@gmail.com</a></p>
+    <p><b>GitHub: </b><a href="https://github.com/nksiu" target="_blank" rel="noopener noreferrer">nksiu</a></p>
+    <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/nicholas-siu-409483182/" target="_blank" rel="noopener noreferrer">Nick Siu</a></p>
   </div>
 )
 

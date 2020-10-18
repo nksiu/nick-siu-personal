@@ -11,7 +11,7 @@ const Header = () => {
 
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item" active={true}>
+          <li className="nav-item">
             <Link to={"/"} className="nav-link">About</Link>
           </li>
           <li className="nav-item">

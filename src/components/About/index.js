@@ -29,7 +29,7 @@ const INTRO_TEXT = (
         <li>Can make 1 minute rice in 58 seconds</li>
       </ul>
     </p>
-    <p><b>Resume: </b><a href="https://drive.google.com/file/d/1SDX2ujZW5XqUBVU7XsXES9SXp0L09IJd/view?usp=sharing" target="_blank">View</a></p>
+    <p><b>Resume: </b><a href="https://drive.google.com/file/d/1SDX2ujZW5XqUBVU7XsXES9SXp0L09IJd/view?usp=sharing" target="_blank" rel="noopener noreferrer">View</a></p>
   </div>
 )
 
