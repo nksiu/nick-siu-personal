@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Header from "./components/Header";
 import About from "./components/About"
 import Contact from "./components/Contact"
+import Experience from "./components/Experience"
 
 class App extends Component {
   render() {
@@ -14,7 +15,7 @@ class App extends Component {
         <Router>
           <Header />
           <Switch>
-            <Route exact path="/experience" render={() => <About />} />
+            <Route exact path="/experience" render={() => <Experience />} />
             <Route exact path="/portfolio" render={() => <About />} />
             <Route exact path="/contact" render={() => <Contact />} />
             <Route exact path="/" render={() => <About />} />
