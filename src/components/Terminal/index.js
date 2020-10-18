@@ -29,7 +29,7 @@ const Terminal = ({header, command, body}) => {
               <div>
               {SHELL_INPUT}
               <Typist
-                avgTypingDelay={30}
+                avgTypingDelay={40}
                 startDelay={1200}
                 onTypingDone={showBodyContent}
                 cursor={{hideWhenDone: true}}

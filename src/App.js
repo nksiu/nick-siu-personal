@@ -15,7 +15,7 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/experience" render={() => <About />} />
-            <Route exact path="/project" render={() => <About />} />
+            <Route exact path="/portfolio" render={() => <About />} />
             <Route exact path="/contact" render={() => <Contact />} />
             <Route exact path="/" render={() => <About />} />
           </Switch>
