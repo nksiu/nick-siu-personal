@@ -1,40 +1,28 @@
 import React from "react";
 import {Rotate} from "react-reveal";
 
-const Card = ({experience, isEven}) => {
+import { VerticalTimelineElement }  from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import SchoolIcon from "@material-ui/icons/School";
+import WorkIcon from "@material-ui/icons/Work";
+
+const Card = ({experience}) => {
+  const whatStyle = experience.type === "work" ? "rgb(33, 150, 243)" : "rgb(233, 30, 99)"
+  const whatIcon = experience.type === "work" ? <WorkIcon /> : <SchoolIcon />;
+
   return (
-    <div>
-      {
-        isEven ?
-          <Rotate top left>
-            <div>
-                <div class="card text-white bg-info mb-3">
-                  <div class="card-header">{experience.company}</div>
-                    <div class="card-body">
-                      {experience.title ? <h4 class="card-title">{experience.title}</h4> : null}
-                        <p class="card-text">
-                          {experience.description}
-                        </p>
-                    </div>
-                </div>
-            </div>
-          </Rotate>
-        :
-          <Rotate bottom right>
-            <div>
-                <div class="card text-white bg-info mb-3">
-                  <div class="card-header">{experience.company}</div>
-                    <div class="card-body">
-                      {experience.title ? <h4 class="card-title">{experience.title}</h4> : null}
-                        <p class="card-text">
-                          {experience.description}
-                        </p>
-                    </div>
-                </div>
-            </div>
-          </Rotate>
-      }
-    </div>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--education"
+        date={experience.date}
+        iconStyle={{ background: whatStyle, color: "#fff" }}
+        icon={whatIcon}
+      >
+        <h3 className="vertical-timeline-element-title">{experience.title}</h3>
+        <h4 className="vertical-timeline-element-subtitle">{experience.company}</h4>
+        <p>
+          {experience.description}
+        </p>
+      </VerticalTimelineElement>
   )
 }
 
