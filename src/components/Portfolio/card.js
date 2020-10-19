@@ -29,12 +29,12 @@ const Card = ({project}) => {
           {project.description}
         </p>
         <CardButtonWrapperSC hasButtons={hasButtons} bothButtons={hasBothButtons}>
-          <span>
+          <div>
             {project.url ? <a href={project.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Website</a> : null}
-          </span>
-          <span className="source-btn">
+          </div>
+          <div className="source-btn">
             {project.sourceCode ? <a href={project.sourceCode} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Source Code</a> : null}
-          </span>
+          </div>
         </CardButtonWrapperSC>
       </VerticalTimelineElement>
   )
