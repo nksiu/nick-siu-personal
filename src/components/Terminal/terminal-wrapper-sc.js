@@ -8,7 +8,7 @@ const blink = keyframes`
 `
 
 const TerminalWrapperSC = styled.div`
-padding-top: 60px;
+padding-top: 120px;
 .terminal {
   background-color: #35383D;
   color: white;
