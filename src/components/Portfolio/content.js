@@ -7,7 +7,7 @@ export const projects = [
     title: "My Calendar",
     techStack: "React, Redux, MongoDB, Node, Express",
     description: calendarDesc,
-    date: "Present - September 2020",
+    date: "September 2020 - Present",
     type: "personal",
     url: "https://my-calendar-mern.herokuapp.com/",
     sourceCode: "https://github.com/nksiu/calendar-app"
