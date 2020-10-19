@@ -7,8 +7,6 @@ import Terminal from "../Terminal"
 import {Fade} from "react-reveal"
 import FullHeightWrapperSC from "../full-height-wrapper-sc"
 
-const backGroundColor = "#f1c2bb";
-
 const INTRO_TEXT = (
   <div>
     <p>
@@ -31,7 +29,7 @@ const INTRO_COMMAND = "cat nick.txt";
 
 const About = () => {
   return (
-    <FullHeightWrapperSC id="about" backGroundColor={backGroundColor} className="ScreenBlockContainer">
+    <FullHeightWrapperSC id="about" backGroundColor={null} className="ScreenBlockContainer">
       <div className="full-height">
         <Fade right>
           <Terminal header={"About"} command={INTRO_COMMAND} body={INTRO_TEXT}/>

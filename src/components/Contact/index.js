@@ -17,7 +17,7 @@ const CONTACT_TEXT = (
 
 const CONTACT_COMMAND = "cat contact.txt";
 
-const backGroundColor = "#f9de77";
+const backGroundColor = "#b491c8";
 
 const Contact = () => {
   return (
