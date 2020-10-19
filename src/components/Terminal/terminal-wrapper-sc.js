@@ -71,6 +71,14 @@ padding-top: 120px;
   display: inline-block;
 }
 
+.doneTyping {
+  display: inline-block;
+}
+
+.doneTyping p {
+  display: inline-block;
+}
+
 .cursor {
   animation: ${blink} 1s linear infinite;
 }
