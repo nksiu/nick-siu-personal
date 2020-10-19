@@ -1,5 +1,4 @@
 import React from "react";
-import {Rotate} from "react-reveal";
 
 import { VerticalTimelineElement }  from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";

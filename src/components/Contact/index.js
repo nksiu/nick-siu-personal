@@ -1,17 +1,11 @@
 import React from "react";
-import {createGlobalStyle} from 'styled-components'
 
 // Components
-import Terminal from "../Terminal"
+import Terminal from "../Terminal";
 
-// Animations
-import {Fade} from "react-reveal"
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: #a8d6c7;
-  }
-`
+// Animations and Styling
+import {Fade} from "react-reveal";
+import FullHeightWrapperSC from "../full-height-wrapper-sc";
 
 const CONTACT_TEXT = (
   <div>
@@ -21,16 +15,19 @@ const CONTACT_TEXT = (
   </div>
 )
 
-const CONTACT_COMMAND = "cat contact.txt"
+const CONTACT_COMMAND = "cat contact.txt";
+
+const backGroundColor = "#f9de77";
 
 const Contact = () => {
   return (
-    <div>
-      <GlobalStyle />
-      <Fade left>
-        <Terminal header={"Contact"} command={CONTACT_COMMAND} body={CONTACT_TEXT}/>
-      </Fade>
-    </div>
+    <FullHeightWrapperSC id="contact" backGroundColor={backGroundColor}>
+      <div className="full-height">
+        <Fade left>
+          <Terminal header={"Contact"} command={CONTACT_COMMAND} body={CONTACT_TEXT}/>
+        </Fade>
+      </div>
+    </FullHeightWrapperSC>
   )
 }
 

@@ -1,17 +1,13 @@
 import React from "react";
-import {createGlobalStyle} from 'styled-components'
 
 // Components
 import Terminal from "../Terminal"
 
-// Animations
+// Animations and Styling
 import {Fade} from "react-reveal"
+import FullHeightWrapperSC from "../full-height-wrapper-sc"
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: #b7d2e0;
-  }
-`
+const backGroundColor = "#f1c2bb";
 
 const INTRO_TEXT = (
   <div>
@@ -35,12 +31,13 @@ const INTRO_COMMAND = "cat nick.txt";
 
 const About = () => {
   return (
-    <div>
-      <GlobalStyle />
-      <Fade right>
-        <Terminal header={"About"} command={INTRO_COMMAND} body={INTRO_TEXT}/>
-      </Fade>
-    </div>
+    <FullHeightWrapperSC id="about" backGroundColor={backGroundColor} className="ScreenBlockContainer">
+      <div className="full-height">
+        <Fade right>
+          <Terminal header={"About"} command={INTRO_COMMAND} body={INTRO_TEXT}/>
+        </Fade>
+      </div>
+    </FullHeightWrapperSC>
   )
 }
 

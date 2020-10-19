@@ -22,10 +22,10 @@ const Card = ({project}) => {
           {project.description}
         </p>
         <span>
-          {project.url ? <a href={project.url} class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Website</a> : null}
+          {project.url ? <a href={project.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Website</a> : null}
         </span>
         <span>
-          {project.sourceCode ? <a href={project.sourceCode} class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Source Code</a> : null}
+          {project.sourceCode ? <a href={project.sourceCode} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Source Code</a> : null}
         </span>
       </VerticalTimelineElement>
   )
