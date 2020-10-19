@@ -11,7 +11,7 @@ import StarIcon from "@material-ui/icons/Star";
 import "react-vertical-timeline-component/style.min.css";
 import FullHeightWrapperSC from "../full-height-wrapper-sc"
 
-const backGroundColor= "#a8d6c7";
+const backGroundColor = "#a8d6c7";
 
 const Portfolio = () => {
   return (

@@ -17,7 +17,7 @@ const Experience = () => {
   return (
     <FullHeightWrapperSC id="experience" backGroundColor={backGroundColor}>
       <div className="full-height">
-        <h1 style={{textAlign: "center"}}>Experience</h1>
+      <h1 style={{textAlign: "center"}}>Experience</h1>
         <VerticalTimeline>
           {
             experiences.map((experience) => (<Card key={uuidv4()} experience={experience}/>))

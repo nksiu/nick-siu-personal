@@ -8,6 +8,7 @@ const FullHeightWrapperSC = styled.div`
 
   h1 {
     background-color: ${props => props.backGroundColor};
+    padding-top: 15px;
   }
 `
 

@@ -23,9 +23,7 @@ class App extends Component {
         //   </Switch>
         // </Router>
         <div className="App">
-          <div>
-            <Header />
-          </div>
+          <Header />
           <About />
           <Experience />
           <Portfolio/>
