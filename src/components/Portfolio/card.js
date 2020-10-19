@@ -1,13 +1,20 @@
 import React from "react";
 
+// Components
 import { VerticalTimelineElement }  from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import PersonIcon from '@material-ui/icons/Person';
+
+// Styling
+import "react-vertical-timeline-component/style.min.css";
+import CardButtonWrapperSC from "./card-button-wrapper-sc";
 
 const Card = ({project}) => {
   const whatStyle = project.type === "personal" ? "rgb(106, 215, 229)" : "rgb(233, 30, 99)"
   const whatIcon = project.type === "personal" ? <PersonIcon /> : <SchoolIcon />;
+
+  const hasButtons = project.url !== "" || project.sourceCode !== "";
+  const hasBothButtons = project.url !== "" && project.sourceCode !== "";
 
   return (
       <VerticalTimelineElement
@@ -21,12 +28,14 @@ const Card = ({project}) => {
         <p>
           {project.description}
         </p>
-        <span>
-          {project.url ? <a href={project.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Website</a> : null}
-        </span>
-        <span>
-          {project.sourceCode ? <a href={project.sourceCode} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Source Code</a> : null}
-        </span>
+        <CardButtonWrapperSC hasButtons={hasButtons} bothButtons={hasBothButtons}>
+          <span>
+            {project.url ? <a href={project.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Website</a> : null}
+          </span>
+          <span className="source-btn">
+            {project.sourceCode ? <a href={project.sourceCode} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Source Code</a> : null}
+          </span>
+        </CardButtonWrapperSC>
       </VerticalTimelineElement>
   )
 }
