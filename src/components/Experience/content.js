@@ -1,9 +1,9 @@
 const RivalSoft = `
-  As a Software Engineer Intern at Rival Technologies (a Saas company which conducts surveys via customizable chats), my major devliverable was 
-  to start and finish a fullstack project, which was to add features to and refactor the entire subscription 
-  workflow of the product. The main goal of this refactor was to obtain data points that could not be captured with the "current" 
-  (now old) subscription workflow, which further improved the reports that were generated upon responding to the chats. Through this
-  project, I was able to mature my understanding of datastore management (Elasticsearch, PostgreSQL, Redis), data transformations
+  As a Software Engineer Intern at Rival Technologies (a Saas company which conducts surveys via customizable chats), my major deliverable was 
+  to start and finish a fullstack project, adding features to and refactoring the entire subscription workflow. 
+  The main goal of this refactor was to obtain data points that could not be captured with the previous
+  subscription workflow, which further improved the reports that were generated upon responses to the chats. Through this
+  project, I was able to gain experience in datastore management (Elasticsearch, PostgreSQL, Redis), data transformations
   thoughout the product (AST) and frontend design patterns.
 `
 

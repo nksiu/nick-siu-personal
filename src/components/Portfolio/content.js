@@ -1,6 +1,6 @@
 const calendarDesc = `
-  The purpose of this calendar web application is to help keep track with our busy lives by a simple glance.
-  Adding, updating, removing, and viewing appointments are done on a per user basis with customeizable settings,
+  This project was done to gain experience creating a fullstack application from scratch.
+  Adding, updating, removing, and viewing appointments are done on a per user basis with customizable settings,
   such as hiding appointments from view on the calendar. What I learned from this project was the creation
   of APIs to persist data to a database (MongoDB). Additionally, the usage of stateless components helped
   me learn about React Hooks. Weather information and group appointments coming soon...
@@ -8,14 +8,13 @@ const calendarDesc = `
 
 const spotifyDesc = `
   Often times, the Spotify algorithm will recommend songs that are similar to your music tastes but with this
-  web applications, users are exposed to the top songs from the selected country, diversifying the users
+  web application, users are exposed to the top songs from the selected country, diversifying the users
   music tastes. This project mainly helped me learn about React and Redux, as well as dealing with APIs
   protected by OAuth 2.0.
 `
 const dictThesDesc = `
-  As a student, I come across words I don't understand and need to open up dictionary.com or thesaurus.com
-  to help aid my understanding with the content I am learning. The creation of this extension was to have the
-  definitions and synonyms conveniently a click away to minimize my disturbance while reading.
+  As a student, I come across words I don't understand and need to open up dictionary.com or thesaurus.com. 
+  The creation of this extension was to have the definitions and synonyms conveniently a click away to minimize my disturbance while reading.
 `
 
 const busesDesc = `
