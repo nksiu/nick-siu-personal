@@ -19,7 +19,7 @@ export const experiences = [
     company: "Rival Technologies",
     title: "Software Engineer Intern",
     description: RivalSoft,
-    date: "May 2020 - August 2020",
+    date: "April 2020 - August 2020",
     type: "work"
   },
   {
