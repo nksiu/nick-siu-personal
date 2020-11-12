@@ -6,6 +6,7 @@ import {projects} from "./content";
 import Card from "./card";
 import { VerticalTimeline, VerticalTimelineElement }  from "react-vertical-timeline-component";
 import StarIcon from "@material-ui/icons/Star";
+import SEO from "../SEO"
 
 // Styling
 import "react-vertical-timeline-component/style.min.css";
@@ -16,6 +17,7 @@ const backGroundColor = "#a8d6c7";
 const Portfolio = () => {
   return (
     <FullHeightWrapperSC id="portfolio" backGroundColor={backGroundColor}>
+      <SEO page="portfolio"/>
       <div className="full-height">
       <h1 style={{textAlign: "center"}}>Portfolio</h1>
         <VerticalTimeline>

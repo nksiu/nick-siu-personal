@@ -6,6 +6,7 @@ import {experiences} from "./content";
 import Card from "./card";
 import { VerticalTimeline, VerticalTimelineElement }  from "react-vertical-timeline-component";
 import StarIcon from "@material-ui/icons/Star";
+import SEO from "../SEO";
 
 // Styling
 import "react-vertical-timeline-component/style.min.css";
@@ -16,6 +17,7 @@ const backGroundColor = "#b7d2e0";
 const Experience = () => {
   return (
     <FullHeightWrapperSC id="experience" backGroundColor={backGroundColor}>
+      <SEO page="experience"/>
       <div className="full-height">
       <h1 style={{textAlign: "center"}}>Experience</h1>
         <VerticalTimeline>

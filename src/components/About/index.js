@@ -2,6 +2,7 @@ import React from "react";
 
 // Components
 import Terminal from "../Terminal"
+import SEO from "../SEO"
 
 // Animations and Styling
 import {Fade} from "react-reveal"
@@ -30,6 +31,7 @@ const INTRO_COMMAND = "cat nick.txt";
 const About = () => {
   return (
     <FullHeightWrapperSC id="about" backGroundColor={null} className="ScreenBlockContainer">
+      <SEO page="about"/>
       <div className="full-height">
         <Fade right>
           <Terminal header={"About"} command={INTRO_COMMAND} body={INTRO_TEXT}/>
