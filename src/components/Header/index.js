@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Link} from "react-scroll";
-import HeaderWrapperSC from "./header-wrapper-sc"
+import HeaderWrapperSC from "./header-wrapper-sc";
 
-const offsetHeight = -48;
+const offsetHeight = 15;
 
 const Header = () => {
   const [isToggled, setToggled] = useState("");
@@ -33,7 +33,7 @@ const Header = () => {
               <Link to={"about"} className="nav-link" onClick={handleItemClick} spy={true} smooth={true} duration={1000}>About</Link>
             </li>
             <li className="nav-item">
-              <Link to={"experience"} className="nav-link" onClick={handleItemClick} offset={offsetHeight} spy={true} smooth={true} duration={1000}>Experience</Link>
+              <Link to={"experience"} className="nav-link" onClick={handleItemClick} offset={-50} spy={true} smooth={true} duration={1000}>Experience</Link>
             </li>
             <li className="nav-item">
               <Link to={"portfolio"} className="nav-link" onClick={handleItemClick} offset={offsetHeight} spy={true} smooth={true} duration={1000}>Portfolio</Link>

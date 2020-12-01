@@ -13,6 +13,7 @@ const Card = ({experience}) => {
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
         date={experience.date}
+        dateClassName="date-label"
         iconStyle={{ background: whatStyle, color: "#fff" }}
         icon={whatIcon}
       >

@@ -12,14 +12,14 @@ import SEO from "../SEO"
 import "react-vertical-timeline-component/style.min.css";
 import FullHeightWrapperSC from "../full-height-wrapper-sc"
 
-const backGroundColor = "#a8d6c7";
+const gradient = "#3b8d99, #2ebf91, #8360c3"
 
 const Portfolio = () => {
   return (
-    <FullHeightWrapperSC id="portfolio" backGroundColor={backGroundColor}>
+    <FullHeightWrapperSC id="portfolio" gradient={gradient}>
       <SEO page="portfolio"/>
       <div className="full-height">
-      <h1 style={{textAlign: "center"}}>Portfolio</h1>
+      <h1 className="portfolio-title" style={{textAlign: "center"}}>Portfolio</h1>
         <VerticalTimeline>
           {
             projects.map((project) => (<Card key={uuidv4()} project={project}/>))

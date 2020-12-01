@@ -12,11 +12,11 @@ import SEO from "../SEO";
 import "react-vertical-timeline-component/style.min.css";
 import FullHeightWrapperSC from "../full-height-wrapper-sc"
 
-const backGroundColor = "#b7d2e0";
+const gradient = "#0d1321, #aa4b6b, #3b8d99";
 
 const Experience = () => {
   return (
-    <FullHeightWrapperSC id="experience" backGroundColor={backGroundColor}>
+    <FullHeightWrapperSC id="experience" gradient={gradient}>
       <SEO page="experience"/>
       <div className="full-height">
       <h1 style={{textAlign: "center"}}>Experience</h1>
