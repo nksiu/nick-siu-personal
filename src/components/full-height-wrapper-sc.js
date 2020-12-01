@@ -14,12 +14,8 @@ const FullHeightWrapperSC = styled.div`
     color: white;
   }
 
-  .contact-terminal {
-    padding-top: 100px;
-  }
-
   .portfolio-title {
-    padding-top: 75px;
+    padding-top: 50px;
   }
 
   h1 {
