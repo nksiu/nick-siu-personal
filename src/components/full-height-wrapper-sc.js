@@ -4,16 +4,22 @@ import mountainImage from "../images/mountain.jpg";
 const FullHeightWrapperSC = styled.div`
   .full-height {
     min-height: 100vh;
-    background-image: ${props => props.id === "about" ? `url(${mountainImage})` : null};
+    background-image: ${props => props.id === "about" ? `url(${mountainImage})` : `linear-gradient(${props.gradient})`};
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: ${props => props.backGroundColor};
+  }
+
+  .date-label {
+    color: white;
+  }
+
+  .portfolio-title {
+    padding-top: 50px;
   }
 
   h1 {
-    background-color: ${props => props.backGroundColor};
-    padding-top: 15px;
+    color: white;
   }
 `
 

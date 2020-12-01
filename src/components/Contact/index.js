@@ -18,13 +18,14 @@ const CONTACT_TEXT = (
 const CONTACT_COMMAND = "cat contact.txt";
 
 const backGroundColor = "#b491c8";
+const gradient = "#8360c3, #8A2387, #E94057, #F27121"
 
 const Contact = () => {
   return (
-    <FullHeightWrapperSC id="contact" backGroundColor={backGroundColor}>
+    <FullHeightWrapperSC id="contact" backGroundColor={backGroundColor} gradient={gradient}>
       <div className="full-height">
         <Fade left>
-          <Terminal header={"Contact"} command={CONTACT_COMMAND} body={CONTACT_TEXT}/>
+          <Terminal className="contact-terminal" header={"Contact"} command={CONTACT_COMMAND} body={CONTACT_TEXT}/>
         </Fade>
       </div>
     </FullHeightWrapperSC>
