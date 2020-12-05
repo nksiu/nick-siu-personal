@@ -12,15 +12,18 @@ import Lottie from "react-lottie";
 import animationData from "../../Lottie/rocket.json";
 import LottieWrapperSC from "../../Lottie/lottie-wrapper-sc";
 import IconWrapperSC from "./icon-wrapper-sc";
+import VizSensor from "react-visibility-sensor";
 
 const gradient = "#8360c3, #8A2387, #E94057, #F27121";
 
 const Contact = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [showIcons, setShowIcons] = useState(false);
+
   const [flipGit, setFlipGit] = useState({
     flip: true,
     side: true
   });
-
   const handleGitFlip = () => {
     setFlipGit({...flipGit, flip: false});
     setTimeout(() => {
@@ -33,7 +36,6 @@ const Contact = () => {
     flip: true,
     side: true
   });
-
   const handleLinkedFlip = () => {
     setFlipLinked({...flipLinked, flip: false});
     setTimeout(() => {
@@ -46,7 +48,6 @@ const Contact = () => {
     flip: true,
     side: true
   });
-
   const handleEmailFlip = () => {
     setFlipEmail({...flipEmail, flip: false});
     setTimeout(() => {
@@ -69,26 +70,28 @@ const Contact = () => {
       <div className="full-height">
         <IconWrapperSC className="sub" gitFlipStatus={flipGit}>
           <div className="container">
-            <Fade delay={6000}>
-              <Flip when={flipGit.flip}>
-                <Paper elevation={3} className="git-paper" onClick={handleGitFlip}>
-                  {
-                    flipGit.side ?
-                      <div className="container">
-                        <div className="icon">
-                          <GitHubIcon fontSize="large"/>
+            <Fade when={showIcons}>
+              <Flip when={flipGit.flip} mirror={true}>
+                <VizSensor onChange={(isVisible) => {setIsVisible(isVisible)}}>
+                  <Paper elevation={3} className="git-paper" onClick={handleGitFlip}>
+                    {
+                      flipGit.side ?
+                        <div className="container">
+                          <div className="icon">
+                            <GitHubIcon fontSize="large"/>
+                          </div>
                         </div>
-                      </div>
-                    :
-                      <div className="container">
-                        <div className="icon">
-                          <a href="https://github.com/nksiu" target="_blank" rel="noopener noreferrer">nksiu</a>
+                      :
+                        <div className="container">
+                          <div className="icon">
+                            <a href="https://github.com/nksiu" target="_blank" rel="noopener noreferrer">nksiu</a>
+                          </div>
                         </div>
-                      </div>
-                  }
-                </Paper>
+                    }
+                  </Paper>
+                </VizSensor>
               </Flip>
-              <Flip when={flipEmail.flip}>
+              <Flip when={flipEmail.flip} mirror={true}>
                 <Paper elevation={3} className="email-paper" onClick={handleEmailFlip}>
                   {
                     flipEmail.side ?
@@ -106,7 +109,7 @@ const Contact = () => {
                   }
                 </Paper>
               </Flip>
-              <Flip when={flipLinked.flip}>
+              <Flip when={flipLinked.flip} mirror={true}>
                 <Paper elevation={3} className="linked-paper" onClick={handleLinkedFlip}>
                   {
                     flipLinked.side ?
@@ -127,12 +130,25 @@ const Contact = () => {
             </Fade>
           </div>
         </IconWrapperSC>
-        <div className="lottie-anim">
-          <Lottie
-            options={defaultOptions}
-            height={window.innerHeight}
-          />
-        </div>
+        {
+          isVisible && !showIcons ?
+            <div className="lottie-anim">
+              <Lottie
+                options={defaultOptions}
+                height={window.innerHeight}
+                eventListeners={[
+                  {
+                    eventName: "complete",
+                    callback: () => {
+                      setShowIcons(true)
+                      setIsVisible(false);
+                    }
+                  }
+                ]}
+              />
+            </div>
+          : null
+        }
       </div>
     </LottieWrapperSC>
   )
