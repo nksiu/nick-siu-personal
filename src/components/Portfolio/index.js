@@ -20,7 +20,7 @@ const Portfolio = () => {
       <SEO page="portfolio"/>
       <div className="full-height">
         <Fade bottom>
-          <h1 className="portfolio-title" style={{textAlign: "center"}}>Portfolio</h1>
+          <h1 className="portfolio-title" style={{textAlign: "center"}} duration={2000}>Portfolio</h1>
         </Fade>
         <VerticalTimeline>
           {

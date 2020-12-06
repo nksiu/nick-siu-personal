@@ -19,7 +19,7 @@ const Experience = () => {
     <FullHeightWrapperSC id="experience" gradient={gradient}>
       <SEO page="experience"/>
       <div className="full-height">
-        <Fade bottom>
+        <Fade bottom duration={2000}>
           <h1 style={{textAlign: "center"}}>Experience</h1>
         </Fade>
         <VerticalTimeline>
