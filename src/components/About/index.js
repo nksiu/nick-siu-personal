@@ -46,20 +46,24 @@ const About = () => {
       <SEO page="about"/>
       <div className="full-height">
         <CloudWrapperSC className="sub">
-          <div className="cloud-left">
-            <Lottie
-              options={defaultOptions}
-              height={200}
-              width={200}
-            />
-          </div>
-          <div className="cloud-right">
-            <Lottie
-              options={defaultOptions}
-              height={200}
-              width={200}
-            />
-          </div>
+          <Fade right duration={1500}>
+            <div className="cloud-left">
+              <Lottie
+                options={defaultOptions}
+                height={200}
+                width={200}
+              />
+            </div>
+          </Fade>
+          <Fade left duration={1500}>
+            <div className="cloud-right">
+              <Lottie
+                options={defaultOptions}
+                height={200}
+                width={200}
+              />
+            </div>
+          </Fade>
         </CloudWrapperSC>
         <Fade right>
           <Terminal header={"About"} command={INTRO_COMMAND} body={INTRO_TEXT}/>
