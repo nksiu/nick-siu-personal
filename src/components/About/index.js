@@ -1,12 +1,15 @@
 import React from "react";
 
 // Components
-import Terminal from "../Terminal"
-import SEO from "../SEO"
+import Terminal from "../Terminal";
+import SEO from "../SEO";
 
 // Animations and Styling
-import {Fade} from "react-reveal"
-import FullHeightWrapperSC from "../full-height-wrapper-sc"
+import {Fade} from "react-reveal";
+import FullHeightWrapperSC from "../full-height-wrapper-sc";
+import Lottie from "react-lottie";
+import animationData from "../../Lottie/cloud.json";
+import CloudWrapperSC from "./cloud-wrapper-sc";
 
 const INTRO_TEXT = (
   <div>
@@ -29,10 +32,35 @@ const INTRO_TEXT = (
 const INTRO_COMMAND = "cat nick.txt";
 
 const About = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
     <FullHeightWrapperSC id="about" backGroundColor={null} className="ScreenBlockContainer">
       <SEO page="about"/>
       <div className="full-height">
+        <CloudWrapperSC className="sub">
+          <div className="cloud-left">
+            <Lottie
+              options={defaultOptions}
+              height={200}
+              width={200}
+            />
+          </div>
+          <div className="cloud-right">
+            <Lottie
+              options={defaultOptions}
+              height={200}
+              width={200}
+            />
+          </div>
+        </CloudWrapperSC>
         <Fade right>
           <Terminal header={"About"} command={INTRO_COMMAND} body={INTRO_TEXT}/>
         </Fade>
