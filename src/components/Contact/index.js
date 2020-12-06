@@ -9,7 +9,7 @@ import EmailIcon from "@material-ui/icons/Email";
 // Animations and Styling
 import {Fade, Flip} from "react-reveal";
 import Lottie from "react-lottie";
-import animationData from "../../Lottie/rocket.json";
+import animationData from "../../Lottie/green-rocket.json";
 import LottieWrapperSC from "../../Lottie/lottie-wrapper-sc";
 import IconWrapperSC from "./icon-wrapper-sc";
 import VizSensor from "react-visibility-sensor";
