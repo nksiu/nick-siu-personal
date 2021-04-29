@@ -16,6 +16,20 @@ const RivalQA = `
 
 export const experiences = [
   {
+    company: "Amazon",
+    title: "Incoming Software Development Engineer Intern",
+    description: "",
+    date: "September 2021 - December 2021",
+    type: "work"
+  },
+  {
+    company: "Machobear",
+    title: "Software Developer Intern",
+    description: "",
+    date: "May 2021 - August 2021",
+    type: "work"
+  },
+  {
     company: "Rival Technologies",
     title: "Software Engineer Intern",
     description: RivalSoft,
