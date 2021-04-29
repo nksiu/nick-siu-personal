@@ -14,10 +14,10 @@ import CloudWrapperSC from "./cloud-wrapper-sc";
 const INTRO_TEXT = (
   <div>
     <p>
-      Hello and welcome to my personal website! I'm currently a 3rd year student
+      Hello! My name is Nick Siu and welcome to my personal website! I'm currently a 4th year student
       at the University of British Columbia studying Computer Science,
-      seeking internship opportunities for Summer 2021. Most recently,
-      I was a Software Engineer Intern at Rival Technologies.
+      seeking internship opportunities for Summer 2022. I currently am a Software Developer Intern at Machobear
+      and an incoming Software Development Engineer Intern at Amazon for Fall 2021.
     </p>
       Quick Facts:
       <ul>
