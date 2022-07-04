@@ -1,6 +1,18 @@
+const Amazon = `
+  As a Software Development Engineer at Amazon, I was on the Credit Card team which helped with the registration process for new customers.
+  My project was to create a log aggregator for the 4 different microservices that existed and implement a permission model which fit the 
+  business needs of the entire Consumer organization. By using services such as AWS OpenSearch, Lambda, S3, CloudWatch Logs, Kinesis Firehose and Cognito,
+  I was able to efficiently deploy (via CDK) the log aggregator system to different regions. 
+`
+
+const Machobear = `
+  During my time at Machobear, I contributed to the migration from Create React App to Next.js in order to improve SEO.
+  Additionally, I worked on the new marketing pages such as the home page for https://liv.rent/
+`
+
 const RivalSoft = `
-  As a Software Engineer Intern at Rival Technologies (a Saas company which conducts surveys via customizable chats), my major deliverable was 
-  to start and finish a fullstack project, adding features to and refactoring the entire subscription workflow. 
+  As a Software Engineer Intern at Rival Technologies, my major deliverable was 
+  a fullstack project, which added features and refactored the entire subscription workflow. 
   The main goal of this refactor was to obtain data points that could not be captured with the previous
   subscription workflow, which further improved the reports that were generated upon responses to the chats. Through this
   project, I was able to gain experience in datastore management (Elasticsearch, PostgreSQL, Redis), data transformations
@@ -16,16 +28,23 @@ const RivalQA = `
 
 export const experiences = [
   {
-    company: "Amazon",
-    title: "Incoming Software Development Engineer Intern",
+    company: "Splunk",
+    title: "Software Engineer Intern",
     description: "",
+    date: "May 2022 - Present",
+    type: "work"
+  },
+  {
+    company: "Amazon",
+    title: "Software Development Engineer Intern",
+    description: Amazon,
     date: "September 2021 - December 2021",
     type: "work"
   },
   {
     company: "Machobear",
     title: "Software Developer Intern",
-    description: "",
+    description: Machobear,
     date: "May 2021 - August 2021",
     type: "work"
   },
